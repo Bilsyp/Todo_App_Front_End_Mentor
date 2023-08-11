@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .task_container {
+    @apply w-[90%] md:w-[84%] lg:w-[40%];
+  }
+  .btn {
+    @apply hover:text-blue_gradient;
+  }
+  .btn.mobile {
+    @apply font-semibold text-VeryDarkGrayishBlue;
+  }
+  .task::-webkit-scrollbar-thumb {
+    @apply rounded-[8px] bg-gradient-to-t from-blue_gradient to-purple_gradient;
+    /* border-radius: 8px;
+    background-color: ; */
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Very_Light_Gray: hsl(0, 0%, 98%);
+  --Very_Light_Grayish_Blue: hsl(236, 33%, 92%);
+  --Light_Grayish_Blue: hsl(233, 11%, 84%);
+  --Dark_Grayish_Blue: hsl(236, 9%, 61%);
+  --Very_Dark_Grayish_Blue: hsl(235, 19%, 35%);
+
+  /* ### Dark_Theme */
+
+  --Very_Dark_Blue: hsl(235, 21%, 11%);
+  --Very_Dark_Desaturated_Blue: hsl(235, 24%, 19%);
+  --Light_Grayish_Blue: hsl(234, 39%, 85%);
+  --Light_Grayish_Blue_hover: hsl(236, 33%, 92%);
+  --Dark_Grayish_Blue: hsl(234, 11%, 52%);
+  --Very_Dark_Grayish_Blue: hsl(233, 14%, 35%);
+  --Very_Dark_Grayish_Blue: hsl(237, 14%, 26%);
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+span {
+  font-weight: 400;
+}
+
+.task::-webkit-scrollbar {
+  width: 10px;
+}
+
+.task::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
